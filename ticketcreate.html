@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- logo -->
+    <link rel="icon" href="img/logo1.png">
+    <title>Boleta vacaciones | Sistema Municipalidad</title>
+</head>
+
+<body>
+    <!-- Navegacion -->
+    <header class="navegacion">
+        <a href="index.html" class="logo">
+            <img src="img/logo1.png" alt="logomunicipalidad">
+            <img src="img/logo2.png" alt="logogobiernocanas">
+        </a>
+        <nav>
+            <a class="navegacion-enlace" href="index.html">Volver</a>
+        </nav>
+    </header>
+
+    <form method="post" class="formulario_empleado" action="controller/ticketcreate.php">
+
+        <section class="empleado">
+            <h1>
+                FORMULARIO DE SOLICITUD PARA VACACIONES:
+            </h1>
+
+            <div class="fecha_Solicitud">
+                <h3>
+                    Fecha de la solicitud (ejemplo 2022-10-25)
+                </h3>
+                <input type="text" name="fecha" placeholder="YYYY-MM-DD">
+            </div>
+            <br>
+            <!-- <h2>
+                Datos personales
+            </h2> -->
+            <div class="datos_personales_crear">
+                    <div>
+                        <h3>Departamento</h3>
+                        <input type="text" name="departamento" placeholder="Ingrese el Departamento">
+                        <h3>Nombre</h3>
+                        <input type="text" name="nombre" placeholder="Ingrese el Nombre">
+                        <h3>Cargo que desempeña</h3>
+                        <input type="text" name="cargo" placeholder="Ingrese el Cargo">
+                    </div>
+                    <div>
+                        <h3>Expediente</h3>
+                        <input type="text" name="expediente" placeholder="Ingrese el Expediente">
+                        <h3>Cédula </h3>
+                        <input type="text" name="cedula" placeholder="Ingrese la Cédula">
+                        <h3>Fecha de ingreso </h3>
+                        <input type="text" name="fecha_ingreso" placeholder="YYYY-MM-DD">
+                    </div>
+            </div>
+            <br>
+            <!-- <h2>Fecha de disfrute</h2> -->
+            <div class="datos_vacaciones_crear">
+                <div class="fechas">
+                    <div>
+                        <h3>Fecha inicio (ejemplo 2022-10-25)</h3>
+                        <input type="text" name="fecha_inicio" placeholder="YYYY-MM-DD">
+                    </div>
+                    <div>
+                        <h3>Fecha fin (ejemplo 2022-10-25)</h3>
+                        <input type="text" name="fecha_fin" placeholder="YYYY-MM-DD">
+                    </div>
+                </div>
+            </div>
+            <h3>Cantidad de días</h3>
+            <div class="cantidad_dias">
+                <input type="number" name="dias" placeholder="Cantidad de días">
+            </div><br>
+        </section><br>
+        <div class="boton_enviar">
+            <input class="boton_enlace" type="submit" name="insertar"></input>
+        </div><br>
+    </form>
+    <br>
+</body>
+
+</html>

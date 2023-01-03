@@ -1,0 +1,595 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(58, 58, 224, 1) 100%);
+    height: fit-content;
+}
+
+.fondo_empleado {
+    background-color: #fff;
+    height: fit-content;
+
+}
+.fondo_boleta {
+    background-color: #fff;
+    height: fit-content;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+h1,
+h2,
+h3 {
+    color: #000;
+}
+
+.text_justify {
+    text-align: justify !important;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+/* Navegacion del menu */
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 70px;
+    background-color: rgb(4, 28, 60);
+}
+
+nav a {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width:1200px) {
+    header {
+        padding: 45px;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .contenedor_index {
+        display: block;
+        text-align: center;
+    }
+}
+
+.navegacion-enlace-activo,
+.navegacion-enlace:hover {
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #11b1ce;
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    padding: 10px;
+}
+
+/* Navegacion del menu */
+
+/* contenedor del inicio-index */
+
+
+.contenedor_index {
+    display: flex;
+    text-align: center;
+}
+
+.personal_index {
+    margin: 0px auto;
+
+}
+
+.logo_index img {
+    vertical-align: middle;
+    width: 200px;
+    margin: 0 100px
+}
+
+.contenedor P {
+    text-align: center;
+    padding: 0px;
+}
+
+.titulo_index p {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.titulo h1 {
+    width: 40%;
+    border-radius: 10px;
+    margin: 0px auto
+}
+
+.perfil_personal {
+    background-color: #11b1ce;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.perfil_personal img {
+    width: 100px !important;
+}
+
+.perfil_personal h1 {
+    font-size: 2.8rem;
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: #000;
+}
+
+.manual_usuario:hover {
+    color: blue;
+}
+
+footer a {
+    color: #000;
+}
+
+/* contenedor del inicio-index */
+
+/* crear base de datos personal*/
+
+/* ver base de datos personal */
+
+.container_table {
+    background-color: #000;
+    text-align: center;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(17, 1fr);
+    grid-auto-rows: 90px;
+}
+
+.table_title {
+    color: #fff;
+    background-color: #246355;
+    grid-column-start: 1;
+    grid-column-end: 19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.table_header {
+    vertical-align: middle !important;
+    height: 20px;
+    line-height: 20px;
+    height: 80px;
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.table_header_edit{
+    vertical-align: middle !important;
+    height: 20px;
+    line-height: 60px;
+    height: 80px;
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.table_item {
+    background-color: #fff;
+}
+
+.table_item_operacion {
+    line-height: 70px;
+    background-color: #fff;
+}
+
+.table_item_link {
+    color: #000;
+}
+
+.table_item_link:hover {
+    color: blue;
+}
+
+/* editar */
+.table_title_edit {
+    color: #fff;
+    background-color: #246355;
+    grid-column-start: 1;
+    grid-column-end: 19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.table_header {
+    vertical-align: middle !important;
+    height: 20px;
+    line-height: 60px;
+    height: 80px;
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.img_operacion {
+    width: 25px;
+    vertical-align: middle;
+}
+
+.img_operacion_edit:hover {
+    background-color: #11b1ce;
+    border-radius: 5px;
+}
+
+.img_operacion_delete:hover {
+    background-color: #fa1c1c;
+    border-radius: 5px;
+}
+
+.container_table_edit {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    grid-auto-rows: 80px;
+}
+
+.table_item_input {
+    text-align: center;
+    height: 50px;
+    width: 75px;
+    display: block;
+    padding-left: 10px;
+
+}
+.table_item_input_submit{
+    border: none;
+    background-color: #0f4c75;
+    color: #bbe1fa;
+}
+.table_item_input_submit:hover{
+    background-color: #bbe1fa;
+    color: #0f4c75;
+}
+
+/*  */
+.agregar_empleado input {
+    border-radius: 6px;
+    height: 30px;
+}
+
+.link_personal {
+    background-color: #fff;
+    width: 600px;
+    border-radius: 10px;
+    margin: 0px auto;
+    -webkit-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.link_personal img {
+    padding: 10px;
+    width: 40px;
+    vertical-align: middle;
+}
+
+.navegacion-enlace_:hover {
+    color: blue;
+}
+
+.link_personal a {
+    color: black;
+}
+
+/* ver base de datos personal fin*/
+/* crear base de datos personal fin*/
+
+/* ver base de datos boletas */
+/* crear base de datos boletas */
+
+.container_table_boleta {
+    background-color: #000;
+    text-align: center;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-rows: 90px;
+}
+
+.table_title_boleta {
+    color: #fff;
+    background-color: #246355;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.table_header_boleta {
+    vertical-align: middle !important;
+    height: 20px;
+    line-height: 20px;
+    height: 80px;
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.table_item {
+    background-color: #fff;
+}
+
+.table_item_link {
+    color: #000;
+}
+
+.table_item_link:hover {
+    color: blue;
+}
+
+
+/* ver base de datos boletas fin*/
+/* crear base de datos boletas fin*/
+
+
+
+/* formulario crear boleta vacaciones*/
+.empleado input {
+    border-radius: 6px;
+    height: 30px;
+}
+
+.formulario_empleado {
+    width: 700px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.formulario_empleado h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.formulario_empleado label,
+.formulario_empleado input,
+.formulario_empleado textarea {
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.fecha_Solicitud {
+    margin: 0px auto;
+    width: 400px;
+}
+
+.fecha_Solicitud input {
+    margin: 0px auto;
+}
+
+.cantidad_dias {
+    margin: 0px auto;
+    width: 400px;
+}
+
+.cantidad_dias input {
+    margin: 0px auto;
+}
+
+.datos_personales_crear {
+    width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+.boton_enlace:hover {
+    background-color: #bbe1fa;
+    color: #0f4c75;
+}
+
+.boton_enviar input {
+    box-shadow: 10px 10px 8px #888888;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 0px auto;
+    width: 300px;
+    background: #0f4c75;
+    color: #bbe1fa;
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.datos_vacaciones_crear {
+    /* background-color: #246355; */
+    width: 600px;
+    /* padding: 10px; */
+    margin: 0px auto;
+}
+
+.fechas {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.fechas div {
+    padding: 20px;
+}
+
+.firmas {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.firmas div {
+    width: 200px;
+    padding: 20px;
+}
+
+/* formulario crear boleta vacaciones fin*/
+
+/* formulario ver ultima boleta vacaciones*/
+.navegacion_boleta {
+    color: #000;
+    display: flex;
+    align-items: center;
+    min-width: 80px;
+    background-color: #fff;
+}
+
+.titulo_boleta {
+    font-size: 1.3rem;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.titulo_boleta b {
+
+    color: #000;
+    display: block;
+}
+
+.contenedor_boleta {
+    width: 800px;
+    margin: 0px auto;
+    border-radius: 10px;
+    padding: 0%;
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+.contenedor_boleta h1 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.contenedor_datos h1 {
+    font-size: 1.6rem;
+}
+
+.datos_personales {
+    width: 700px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+.datos_personales_dentro {
+    margin-right: 30px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.datos_personales div {
+    padding: .5px;
+}
+
+.datos_personales b {
+    padding: 15px;
+}
+
+.uso_exclusivo {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    width: 680px;
+}
+
+.uso_exclusivo_abajo input {
+    width: 200px;
+}
+
+.uso_exclusivo_revisado input {
+    width: 565px;
+}
+
+.uso_exclusivo div {
+    width: 100%;
+}
+
+.uso_exclusivo_abajo_fechas {
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    display: flex;
+}
+
+.uso_exclusivo_abajo {
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    display: flex;
+}
+
+.uso_exclusivo_abajo div {
+    padding-right: 10px;
+    padding-bottom: 3px;
+}
+
+.firmas input {
+    border: none;
+    border-bottom: 2px solid #000;
+}
+.fima_tramitada input{
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+/* formulario ver ultima boleta vacaciones*/

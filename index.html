@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- logo -->
+    <link rel="icon" href="img/logo1.png">
+    <title>Inicio | Sistema Municipalidad</title>
+    <script>
+        function confirmar() {
+            return confirm("¿Está seguro que quiere cerrar sesion?")
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navegacion -->
+    <header class="navegacion">
+        <a href="index.html" class="logo">
+            <img src="img/logo1.png" alt="logomunicipalidad">
+            <img src="img/logo2.png" alt="logogobiernocanas">
+        </a>
+        <nav>
+            <!-- target="_blank" para abrir en una nueva ventana -->
+            <a class="navegacion-enlace" onclick="return confirmar()" href="login/login.html">Cerrar sesión</a>
+        </nav>
+    </header>
+    <div class="contenedor_index">
+        <div class="personal_index"><br>
+            <div class="link_personal">
+                <div class="perfil_personal">
+
+                    <h1><img src="img/perfil-personal.png" alt="">GESTIONAR EL PERSONAL</h1>
+                </div>
+                <p> <img src="img/editar.png" alt="">Para agregar un funcionario <a href="employeeadd.html"
+                        class="navegacion-enlace_">click aqui</a></p>
+                <p> <img src="img/lupa.png" alt="">Para ver y gestionar los funcionarios <a href="controller/employeeshow.php"
+                        class="navegacion-enlace_">click
+                        aqui</a></p><br>
+
+            </div><br>
+        </div>
+
+
+        
+        <div class="personal_index"><br>
+            <div class="link_personal">
+                <div class="perfil_personal">
+
+                    <h1> <img src="img/formulario-de-contacto.png" alt="">GESTIONAR LAS BOLETAS</h1>
+                </div>
+                <p> <img src="img/editar.png" alt="">Para crear una boleta <a href="ticketcreate.html"
+                        class="navegacion-enlace_">click
+                        aqui</a></p>
+                <p> <img src="img/impresora.png" alt="">Para imprimir la boleta <a href="ticketshowlast.php"
+                        class="navegacion-enlace_">click aqui</a></p>
+                <p> <img src="img/lupa.png" alt="">Para ver gestionar las boletas <a href="controller/ticketshowgestor.php"
+                        class="navegacion-enlace_">click aqui</a></p><br>
+
+            </div><br>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <footer>
+        Sistema para gestionar las boletas de vacaciones |
+        <a class="manual_usuario" href="manualusuario/Manual.pdf" download="Manual.pdf">Manual de usuario</a>
+    </footer>
+    </footer>
+</body>
+
+</html>

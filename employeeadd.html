@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- logo -->
+    <link rel="icon" href="img/logo1.png">
+    <title>Agregar Empleado | Sistema Municipalidad</title>
+</head>
+
+<body>
+    <!-- Navegacion -->
+    <header class="navegacion">
+        <a href="index.html" class="logo">
+            <img src="img/logo1.png" alt="logomunicipalidad">
+            <img src="img/logo2.png" alt="logogobiernocanas">
+        </a>
+        <nav>
+            <a class="navegacion-enlace" href="index.html">Volver</a>
+        </nav>
+    </header>
+
+    <form method="post" class="formulario_empleado" action="controller/employeeadd.php">
+
+        <section class="agregar_empleado">
+            <h1>
+                FORMULARIO PARA AGREGAR EMPLEADO:
+            </h1>
+            <div class="datos_personales_crear">
+                <div>
+                    <h3>ID Empleado</h3>
+                    <input type="text" name="empleado" placeholder="ID empleado">
+                </div>
+                <div>
+                    <h3>Fecha de ingreso</h3>
+                    <input type="text" name="fecha_ingreso" placeholder="YYYY-MM-DD">
+                </div>
+            </div>
+            <h2>Informacion personal</h2>
+            <div class="datos_personales_crear">
+                <div>
+                    <h3>Nombre</h3>
+                    <input type="text" name="nombre" placeholder="Ingrese el nombre">
+                    <h3>Fecha de nacimiento</h3>
+                    <input type="text" name="fecha_nacimiento" placeholder="YYYY-MM-DD">
+                </div>
+                <div>
+                    <h3>Apellidos</h3>
+                    <input type="text" name="apellidos" placeholder="Ingrese los apellidos">
+                    <h3>Edad</h3>
+                    <input type="text" name="edad" placeholder="Ingrese la edad">
+                    
+                </div>
+            </div>
+            <div class="datos_personales_crear">
+                <div>
+                    <h3>Cedula</h3>
+                    <input type="text" name="cedula" placeholder="Ingrese la cedula">
+                    <h3>Estado civil</h3>
+                    <input type="text" name="estado_civil" placeholder="Ingrese el estado civil">
+                </div>
+                <div>
+                    <h3>Lugar de nacimiento</h3>
+                    <input type="text" name="lugar_nacimiento" placeholder="Ingrese el lugar de nacimiento">
+                    <h3>Sexo</h3>
+                    <input type="" name="sexo" placeholder="Ingrese el sexo">
+                    
+                </div>
+            </div>
+            <div class="datos_personales_crear">
+                <div>
+                    <h3>Experiencia laboral</h3>
+                    <input type="text" name="experiencia_laboral" placeholder="Ingrese la experiencia">
+                    <h3>Ciudad</h3>
+                    <input type="text" name="ciudad" placeholder="Ingrese la ciudad">
+                </div>
+                <div>
+                    <h3>Nivel academico</h3>
+                    <input type="text" name="nivel_academico" placeholder="Ingrese el nivel academico">
+                    
+                    <h3>Provincia</h3>
+                    <input type="text" name="provincia" placeholder="Ingrese la provincia">
+                </div>
+            </div>
+            <div class="datos_personales_crear">
+                <div>
+                    <h3>Telefono</h3>
+                    <input type="text" name="telefono" placeholder="Ingrese el telefono">
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <input type="text" name="email" placeholder="Ingrese el email">
+                </div>
+            </div>
+        </section><br>
+        <div class="boton_enviar">
+            <input class="boton_enlace" type="submit" name="insertar"></input>
+        </div><br>
+    </form>
+    <br>
+</body>
+
+</html>
